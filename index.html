@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <title>month-ordar </title>
+</head>
+<body>
+
+    <div class="header">
+        <a href="https://os-designer1.github.io/OS-Designer/"> <img src="logo.png" alt="لوجو الموقع" class="logo"> </a><!-- هنا ضع رابط الصورة -->
+        <div class="nav" id="nav">
+           <a href="https://os-designer1.github.io/logo-Designer/">logo</a>
+           <a href="https://os-designer1.github.io/Social-media-Designer/">أعلانات </a>
+           <a href="https://os-designer1.github.io/card-Designer/">كارت شخصي</a>
+           <a href="https://os-designer1.github.io/panar-Designer/">بنر و يفط </a>
+           <a href="https://os-designer1.github.io/logo-Teshrt-Designer/">لوجو علي تيشرت</a>
+           <a href="https://os-designer1.github.io/pepar-Designer/">خدمات الورقيه </a>
+           <a href="tel:+201144898934">اتصل بنا</a>
+           <a href="https://os-designer1.github.io/support/">الدعم</a>
+           
+        </div>
+        
+        
+        <div class="menu-icon" onclick="toggleNav()">☰</div>
+        </div>
+
+        <div class="header2">
+            
+            <div class="header2-nav">
+                          
+
+                <p class="hedar-2-p">premim</p>
+
+            </div>
+          </div>
+
+
+        <div class="container">
+            <div class="image-section">
+            </div>
+    
+            <div class="info-section">
+               <div class="title">
+                    <h1>اشترك معانا في الشهر الواحد  </h1>
+                    <p>  وفر 20% او اكتر</p>
+                    <div class="descuond">
+                    </div>
+                </div>
+    
+                <div class="options">
+                    <div class="option" onclick="selectOption('logo_text')">
+                        <span>عرض الشهر الواحد 1<br><small>هو لوجو كتابه - و تصميم سوشال ميديا </small><br><small>وفرت %20</small></span>
+                        <span class="price">$145 جنيه</span>
+                    </div>
+                    
+                    <div class="option" onclick="selectOption('logo_text')">
+                        <span>عرض الشهر الواحد 2<br><small>هو تصميمان سوشال ميديا - بانار </small><br><small>وفرت %30</small></span>
+                        <span class="price">$210 جنيه</span>
+                    </div>
+                    <div class="option" onclick="selectOption('logo_text')">
+                        <span>عرض الشهر الواحد 3<br><small>هو 3 تصميمات سوشال ميديا - بانار- كارت شخصي - لوجو تيشرت  </small><br><small>وفرت %35</small></span>
+                        <span class="price">$370 جنيه</span>
+                    </div>
+                    <h2>يتم تصميم العرض خلال الشهر</h2>
+                </div>
+                
+
+
+                <div class="order-container">
+                    <form id="form" class="order-form">
+                        <h2 class="form-title">طلب العرض </h2>
+                
+                        <div class="form-group">
+                            <label class="form-label">
+                                <input class="input-field" type="text" name="name" placeholder=" " required>
+                                <span class="input-placeholder">الاسم الكامل</span>
+                            </label>
+                        </div>
+                
+                        <div class="form-group">
+                            <label class="form-label">
+                                <input class="input-field" type="number" name="phone" placeholder=" " required>
+                                <span class="input-placeholder">رقم الهاتف</span>
+                            </label>
+                        </div>
+                
+                        <div class="form-group">
+                            <label class="form-label">
+                                <select class="input-field" name="designType" required>
+                                    <option value="عرض الشهر الواحد 1">عرض الشهر الواحد 1</option>
+                                    <option value="عرض الشهر الواحد 2">عرض الشهر الواحد 2</option>
+                                    <option value="عرض الشهر الواحد 3">عرض الشهر الواحد 3</option>
+
+
+                                </select>
+                                <span class="input-placeholder">نوع التصميم</span>
+                            </label>
+                        </div>
+                
+                        <input type="hidden" name="location" id="location">
+                
+                        <button class="submit-btn" id="button">إرسال الطلب</button>
+                        <p class="form-note">سيتم التواصل معك في أقرب وقت من خلال رقم هاتفك</p>
+                    </form>
+                </div>
+        
+
+    
+                
+            </div>
+        </div>
+
+        <div class="done-ordar">
+            <h1 class="done-ordar-h1">ثق  في تواصلنا</h1>
+            <p class="done-ordar-p">موعدنا مظبوته و تسلمنا في معادو!</p>
+        <img src="done-ordar.png" class="img-done-ordar">
+
+       </div>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <a href="https://os-designer1.github.io/OS-Designer/" class="footer-logo">
+                    <img src="logo.png" alt="OS Logo">
+                </a>
+                <span>اين تجدنا!</span>
+            </div>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>الخدمات</h4>
+                    <ul class="footer-list">
+                        <li><a href="https://os-designer1.github.io/logo-Designer/">شعار</a></li>
+                        <li><a href="https://os-designer1.github.io/panar-Designer/">يفط و بنرات</a></li>
+                        <li><a href="https://os-designer1.github.io/card-Designer/">كارت شخصي </a></li>
+                        <li><a href="https://os-designer1.github.io/Social-media-Designer/">Social media | اعلانات</a></li>
+                        <li><a href="https://os-designer1.github.io/logo-Teshrt-Designer/">طباعه علي تيشرت</a></li>
+                        <li><a href="https://os-designer1.github.io/pepar-Designer/">خدمات ورقيه</a></li>
+                        <li><a href="https://os-designer1.github.io/cv-Designer/">cv</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>استكشف</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">استكشف كيفيه الطباعه</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>التواصل</h4>
+                    <ul class="footer-list">
+                        <li><a href="tel:01144898934">اتصل بنا</a></li>
+                        <li><a href="https://wa.me/201144898934">تواصل واتساب</a></li>
+                        <li><a href="mailto:samasemo5647@gmail.com">تواصل عبر البريد الالكتروني</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <span>OS-Designer. © 2025. العلامة التجارية وجميع الحقوق محفوظة.</span>
+                |
+                <a href="https://maps.app.goo.gl/7onyXFjDYGyX34rU6"> موقعنا</a>
+                <span class="country">مصر | Egypt</span>
+            </div>
+        </footer>
+        
+
+
+
+         <script src="scrept.js" ></script>
+         <script>
+            // استيراد مكتبة EmailJS
+emailjs.init('_ubIcUNvQZ3-Gv0Cl');
+
+// ربط زر الإرسال والنموذج
+const btn = document.getElementById('button');
+const locationInput = document.getElementById('location');
+
+
+
+// عند إرسال النموذج
+document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    btn.innerText = 'جاري الإرسال...';
+
+    const serviceID = 'default_service'; // معرف الخدمة
+    const templateID = 'template_8jz7qt1'; // معرف القالب
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.innerText = 'إرسال الطلب';
+            alert('✅ تم إرسال الطلب بنجاح!');
+            document.getElementById('form').reset();
+        }, (err) => {
+            btn.innerText = 'إرسال الطلب';
+            alert('❌ حدث خطأ، يرجى المحاولة مرة أخرى.');
+            console.error("Error:", err);
+        });
+});
+
+         </script>
+ </body>
+ </html>
