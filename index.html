@@ -108,7 +108,28 @@
                     </form>
                 </div>
         
+                <script>
+                    // عند تحميل الصفحة، قم باسترجاع رقم الهاتف والاسم من Local Storage
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const loggedInUserPhone = localStorage.getItem('loggedInUserPhone'); // استرجاع رقم الهاتف من Local Storage
+                        const loggedInUserName = localStorage.getItem('loggedInUserName'); // استرجاع الاسم من Local Storage
 
+                        const phoneInput = document.querySelector('.input-field[name="phone"]'); // استهداف حقل رقم الهاتف
+                        const nameInput = document.querySelector('.input-field[name="name"]'); // استهداف حقل الاسم
+
+                        if (loggedInUserPhone && phoneInput) {
+                            phoneInput.value = loggedInUserPhone; // تعبئة الحقل برقم الهاتف
+                        }
+
+                        if (loggedInUserName && nameInput) {
+                            nameInput.value = loggedInUserName; // تعبئة الحقل بالاسم
+                        }
+
+                        if (!loggedInUserPhone || !loggedInUserName) {
+                            console.log('لم يتم العثور على بيانات المستخدم المسجل.');
+                        }
+                    });
+                </script>
     
                 
             </div>
