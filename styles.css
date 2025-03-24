@@ -146,10 +146,9 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    width: 100%;
     margin: 20px auto 40px;
     background: #161616;
-    border-radius: 12px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.274);
     padding: 20px;
     display: flex;
@@ -206,10 +205,7 @@ body {
     text-decoration: none;
     transition: background-color 0.3s;
 }
-.option:focus {
-    outline: none;
-    border: 3px solid #0071e3;
-}
+
 .option:hover {
     background-color: #3a3a3a;
 }
