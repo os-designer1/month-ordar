@@ -206,8 +206,8 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
     btn.innerText = 'جاري الإرسال...';
 
-    const serviceID = 'default_service'; // معرف الخدمة
-    const templateID = 'template_8jz7qt1'; // معرف القالب
+    const serviceID = 'default_service';
+    const templateID = 'template_6mrcbbq';
 
     emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
